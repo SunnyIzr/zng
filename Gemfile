@@ -48,3 +48,5 @@ group :test, :development do
   gem 'rspec-rails'
   gem 'shoulda'
 end
+
+gem 'omniauth-facebook'
