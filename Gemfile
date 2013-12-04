@@ -50,4 +50,5 @@ group :test, :development do
   gem 'dotenv-rails'
 end
 
-gem 'omniauth-facebook'
+gem 'omniauth'
+gem 'omniauth-facebook', '1.4.0'
