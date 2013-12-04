@@ -11,10 +11,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131204173653) do
+ActiveRecord::Schema.define(version: 20131204174227) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "colors", force: true do |t|
+    t.string "color"
+  end
+
+  create_table "patterns", force: true do |t|
+    t.string "pattern"
+  end
 
   create_table "products", force: true do |t|
     t.string "sku"
