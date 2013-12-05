@@ -1,19 +1,19 @@
 
-<%= form_tag('/products/', method: 'post') do %>
+<%= form_tag('/products/', method: 'get') do %>
 <div class="row">
   <div class="col-md-12">
     <h4>Color Palette</h4>
     <div class="checkbox">
-      <%= label_tag(:dark, "Dark") %>
-      <%= check_box_tag(:dark) %>
+      <%= label_tag('color[dark]', "Dark") %>
+      <%= check_box_tag('color[dark]') %>
     </div>
     <div class="checkbox">
-      <%= label_tag(:neutral,"Neutral")%>
-      <%= check_box_tag(:neutral) %>
+      <%= label_tag('color[neutral]',"Neutral")%>
+      <%= check_box_tag('color[neutral]') %>
     </div>
     <div class="checkbox">
-      <%= label_tag(:bright, "Bright") %>
-      <%= check_box_tag(:bright) %>
+      <%= label_tag('color[bright]', "Bright") %>
+      <%= check_box_tag('color[bright]') %>
     </div>
   </div>
 </div>
@@ -21,40 +21,40 @@
   <div class="col-md-12">
     <h4>Pattern</h4>
     <div class="checkbox">
-      <%= label_tag(:stripes, "Stripes") %>
-      <%= check_box_tag(:stripes) %>
+      <%= label_tag('pattern[stripes]', "Stripes") %>
+      <%= check_box_tag('pattern[stripes]') %>
     </div>
     <div class="checkbox">
-      <%= label_tag(:argyle, "Argyle") %>
-      <%= check_box_tag(:argyle) %>
+      <%= label_tag('pattern[argyle]', "Argyle") %>
+      <%= check_box_tag('pattern[argyle]') %>
     </div>
     <div class="checkbox">
-      <%= label_tag(:pindots, "Pindots") %>
-      <%= check_box_tag(:pindots) %>
+      <%= label_tag('pattern[pindots]', "Pindots") %>
+      <%= check_box_tag('pattern[pindots]') %>
     </div>
     <div class="checkbox">
-      <%= label_tag(:geometric, "Geometric") %>
-      <%= check_box_tag(:geometric) %>
+      <%= label_tag('pattern[geometric]', "Geometric") %>
+      <%= check_box_tag('pattern[geometric]') %>
     </div>
     <div class="checkbox">
-      <%= label_tag(:polkadot, "Polkadot") %>
-      <%= check_box_tag(:polkadot) %>
+      <%= label_tag('pattern[polkadot]', "Polkadot") %>
+      <%= check_box_tag('pattern[polkadot]') %>
     </div>
     <div class="checkbox">
-      <%= label_tag(:camo, "Camo") %>
-      <%= check_box_tag(:camo) %>
+      <%= label_tag('pattern[camo]', "Camo") %>
+      <%= check_box_tag('pattern[camo]') %>
     </div>
     <div class="checkbox">
-      <%= label_tag(:paisley, "Paisley") %>
-      <%= check_box_tag(:paisley) %>
+      <%= label_tag('pattern[paisley]', "Paisley") %>
+      <%= check_box_tag('pattern[paisley]') %>
     </div>
     <div class="checkbox">
-      <%= label_tag(:floral, "Floral") %>
-      <%= check_box_tag(:floral) %>
+      <%= label_tag('pattern[floral]', "Floral") %>
+      <%= check_box_tag('pattern[floral]') %>
     </div>
     <div class="checkbox">
-      <%= label_tag(:novelty, "Novelty") %>
-      <%= check_box_tag(:novelty) %>
+      <%= label_tag('pattern[novelty]', "Novelty") %>
+      <%= check_box_tag('pattern[novelty]') %>
     </div>
 
   </div>
