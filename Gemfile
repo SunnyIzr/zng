@@ -47,4 +47,8 @@ end
 group :test, :development do
   gem 'rspec-rails'
   gem 'shoulda'
+  gem 'dotenv-rails'
 end
+
+gem 'omniauth'
+gem 'omniauth-facebook', '1.4.0'
