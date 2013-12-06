@@ -7,7 +7,7 @@
                 <span class="cbp-pgrotate">Rotate Item</span>
                 <div class="cbp-pgitem">
                     <div class="cbp-pgitem-flip">
-                        <img src="<%=product.image%>" class="img-rounded" />
+                        <img src="<%=product.image.gsub(/(.jpeg)/,'_medium.jpeg')%>" class="img-rounded" />
                         <img src="images/1_back.png" />
                     </div>
                 </div><!-- /cbp-pgitem -->
