@@ -1,1 +1,18 @@
+</div>
+<div id="cbp-pgcontainer" class="cbp-pgcontainer">
+    <ul class="cbp-pggrid">
+      <% @products.each do |product| %>
+        <li>
+            <div class="cbp-pgcontent">
+                <div class="cbp-pgitem">
+                    <div class="cbp-pgitem-flip">
+                        <img src="<%=product.image.gsub(/(.jpeg)/,'_medium.jpeg')%>" class="img-rounded" />
+                        <img src="<%=product.image.gsub(/(.jpeg)/,'_medium.jpeg')%>" class="img-rounded" />
 
+                    </div>
+                </div><!-- /cbp-pgitem -->
+            </div><!-- cbp-pgcontent -->
+        </li>
+      <%end%>
+    </ul><!-- /cbp-pggrid -->
+</div><!-- /cbp-pgcontainer -->
